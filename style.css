@@ -118,6 +118,75 @@ body {
     box-shadow: 0 0 50px #F0053D, 0 0 20px #F0053D, 0 0 40px #F0053D, 0 0 30px #F0053D, 0 0 120px #F0053D, 0 0 100px #F0053D, 0 0 100px #F0053D;
 }
 
+/* Modal style */
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    max-width: 66.6rem;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: linear-gradient(143deg, #1F1F1F 0%, #121212 100%);
+    transition: all ease .5s;
+}
+
+.modal:hover{
+    background: linear-gradient(150deg, #1F1F1F 0%, #121212 100%);
+    box-shadow: 0 0 50px #080808, 0 0 20px #121212, 0 0 30px #121212;
+}
+
+
+.modal h2{
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.modal input{
+    margin: 2rem 2rem;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 30rem;
+    color: #F0053D;
+    background-color: #1F1F1F;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: #ffffff30 solid 1px;
+    outline: none;
+    transition: all ease .3s;
+    color: #E6E6E6;
+    font-size: 1.9rem;
+}
+
+.modal input:hover{
+    border: #F0053D80 solid 1px;
+}
+
+.modal input:focus{
+    border: #F0053D50 solid 1px;
+}
+
+.modal button{
+    padding: 1.5rem 2rem;
+    color: #E6E6E6;
+    background-image: linear-gradient(90deg, #F0053D 0%, #e72955 100%);
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 0.8rem;
+    color: #1F1F1F;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.modal button:hover{
+    opacity: 70%;
+}
+
 
 @media(max-width: 768px){
     body {
@@ -139,6 +208,10 @@ body {
     .tag{
         bottom: 60px;
     }
+    .modal{
+        max-width: 49.6rem;
+        height: 75rem;
+    }
 }
 
 @media(max-width: 550px){
@@ -153,6 +226,10 @@ body {
         font-size: 1.45rem;
         max-width: 36.6rem;
     }
+    .modal{
+        max-width: 41.6rem;
+        height: 75rem;
+    }
 }
 
 @media(max-width: 450px){
@@ -160,10 +237,24 @@ body {
         max-width: 39rem;
         height: 75rem;
     }
+    .modal{
+        max-width: 39rem;
+        height: 75rem;
+    }
+    .modal h2{
+        font-size: 2rem;
+    }
+    .modal input{
+        font-size: 1.6rem;
+    }
 }
 
 @media(max-width: 400px){
     .card{
+        max-width: 32rem;
+        height: 75rem;
+    }
+    .modal{
         max-width: 32rem;
         height: 75rem;
     }
@@ -173,6 +264,13 @@ body {
     .card{
         max-width: 30rem;
         height: 75rem;
+    }
+    .modal{
+        max-width: 30rem;
+        height: 75rem;
+    }
+    .modal button{
+        font-size: 1.5rem;
     }
 }
 
@@ -185,10 +283,19 @@ body {
     .card .wrapper-infos .avatar{
         width: 15rem;
     }
+
+    .modal{
+        max-width: 25rem;
+        height: 75rem;
+    }
 }
 
 @media(max-width: 290px){
     .card{
+        max-width: 20rem;
+        height: 75rem;
+    }
+    .modal{
         max-width: 20rem;
         height: 75rem;
     }
