@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Text&display=swap">
 </head>
 <body>
-    <div class="modal">
+    <div id="modal" class="modal active">
         <img class="icon-github" src="./button-git.svg">
         <h2>Enter GitHub user</h2>
         <input type="text" id="input-user">
+        <span id="error-message">Preencha o campo corretamente</span>
         <button id="btn-user">Confirm</button>
     </div>
-    <div class="card">
+    <div  id="card" class="card">
         <div class="wrapper-infos">
-            <img class="avatar" src="./profile-image.jpg" alt="Profile image">
-            <h1 class="name">Rafael Reis Silva Franco</h1>
-            <p class="desc">Salvee, seja bem-vindo ao meu Gitbub!\r\n\r\nTrabalho com as seguintes tech: HTML, CSS/SASS, JS, GULP, REACT</p>
+            <img  id="avatar" class="avatar" src="./profile-image.jpg" alt="Profile image">
+            <h1 id="user-name" class="name"></h1>
+            <p id="bio" class="desc"></p>
             <img src="./icon-link.svg" alt="Icon link">
-            <a class="url-profile" href="" target="_blank">https://github.com/faelreis</a>
+            <a id="link-git" class="url-profile" href="" target="_blank"></a>
         </div>
-            <button class="btn-search">
+            <button id="btn-search" class="btn-search">
                 <img src="./button-git.svg" alt="Button link GitHub">
             </button>
     </div>
